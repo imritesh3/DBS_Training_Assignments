@@ -1,0 +1,95 @@
+1.git branch : Lists out all the branches present in the repository.
+ git branch
+ 
+2.git checkout : Allows to checkout or work in a particular branch.
+ git checkout branchname
+
+3.merge : Merges files from branch to master ot between branches
+ git merge branchname
+
+4.git ignore : ignores a particular file to be added to staging.
+  touch .gitignore
+
+5.git push : Push commands allows to push files from local repository
+             to remote server.
+  git push origin master
+
+6.git stash :Temporary storage of information of the files in staging area
+             while checking out to other branches can be done by stash.
+  git stash apply
+
+7.git head : Contains head number of the last committed code and file details.
+  git show head
+
+8.git pull : Pulls the code from remote server to local repository.
+  git pull origin master
+
+9.git remote: Helps in establishing connection with the remote server.
+  git remote add origin remoteserver
+
+10.git revert : Allows reverting back to the previous committed changes.
+   git revert head headnumber
+
+11.git tag : Allows to give different tags for different versions of code.
+   git tag tagname
+
+12.git mv : Allows renaming of file or folder.
+   git mv sourcefile destfile
+
+13.git init : initializes an empty repository.
+   git init
+
+14.git add : Add commands allows to add files to the repository.
+   git add filename
+
+15.git commit : Commits or Saves the file with a comment.
+ git commit -m "Message"
+
+16.git clone : Helps in cloning a remote server repository to our local system.
+   git clone repositoryurl
+
+17.git restore :The restore command removes uncommitted files from staging state.
+   git restore --stage filename
+
+18.git diff : Gives the difference of the changes made on a file.
+   git diff filename
+
+
+19.git log : Gives the log of all commits done on the repository.
+ git log
+
+20.git status : It helps in giving status about the staged files and tells if there are
+                any files to be committed or all files are up to date.
+  git status
+
+21.Setting username: git config --global user.name "<username>"
+   Setting email   : git config --global user.email "<email>"
+
+22. Local repository : Our system is basically a local repository where 
+                       local changes are done.
+    Centralized repository :In centralized repository all the information 
+                            about the files are stored at one central place.
+    Distributed server :  The entire repository is distributed to many users
+                         where everyone can access the code even if the server fails.
+
+
+23.Features of Git VCS :
+        1.Saves time
+        2.Track changes
+        3.Undo mistakes
+        4.Offline working
+
+24. Version control system is a software which helps us in tracking and maintaing 
+    the source code..
+    Benefits of VCS :
+        1. Branching and Merging
+        2.Traceability 
+        3.Entire Change history of the files
+        4.Simultaneous working 
+
+25.Index represents the staging area between the present working directory and
+   repository.The modified files should be first added and then they move to staged area and then 
+   committed.
+
+                      
+
