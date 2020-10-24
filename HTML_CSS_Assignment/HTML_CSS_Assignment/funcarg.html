@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<p>Function computing totalsalary of a person after deductions </p>
+		<p id="sal"></p>
+	    <script>
+			function ComputeSalary(basic,hra,da,deduction){
+				var gross_sal = basic + hra + da;
+				var total_sal = gross_sal - deduction;
+				return total_sal;
+			}
+			document.getElementById("sal").innerHTML = ComputeSalary(1000,1000,500,700);
+		</script>
+	</body>
+</html>

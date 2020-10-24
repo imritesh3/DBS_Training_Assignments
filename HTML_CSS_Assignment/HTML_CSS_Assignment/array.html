@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<p>Loop through the country array and display</p>
+		<button onclick = "showArray()">Click Me</button>
+		<p>Sorted Array</p>
+		<p id="display"></p>
+		<p>Reverse Sorted Array</p>
+		<p id="revdisp"></p>
+	
+		<script>
+			function showArray(){
+				var i=0;
+				var text ="<ul>";
+				var country = ["India","China","Pakistan","SriLanka"];
+				country.sort();
+				for(i=0;i<country.length;i++){
+					text += "<li>"+country[i] + "</li>";
+				}
+				text +="</ul>"
+				document.getElementById("display").innerHTML = text;
+				
+				
+				country.reverse();
+				var text ="<ul>";
+				for(i=0;i<country.length;i++){
+					text += "<li>"+country[i] + "</li>";
+				}
+				text +="</ul>"
+				document.getElementById("revdisp").innerHTML = text;
+			}
+		</script>
+	</body>
+</html>
+		

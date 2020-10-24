@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<p>Math Operations using Java Script</p>
+		<button onclick="calcVal()" value="Calculate">Calculate</button>
+		<p id="math"></p>
+		<script>
+			function calcVal(){
+				var rand_num = Math.random();
+				var max = Math.max(1000,-1000,200,5000,2300);
+				var min = Math.min(1000,-1000,200,5000,2300);
+				var round_num = Math.round(50.23);
+				var ceil_num = Math.ceil(22.3);
+				var floor_num = Math.floor(22.3);
+				
+				document.getElementById("math").innerHTML = "Random number between 0 to 10 : " + rand_num + "<br/>" +
+				"Maximum of 1000, -1000, 200, 5000 & 2300 is    "+  max + "<br/>" +
+				"Minimum of 1000, -1000, 200, 5000 & 2300 is    "+  min + "<br/>" +
+				"Rounded value of 50.23 is    " + round_num + "<br/>" +
+				"Ceiling value of 22.3 is    " + ceil_num + "<br/>" +
+				"Floor value of 22.3 is     " + floor_num + "<br/>";
+			}
+		</script>
+	</body>
+</html>
+	 

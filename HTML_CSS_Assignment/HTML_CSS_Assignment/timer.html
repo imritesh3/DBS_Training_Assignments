@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<p>Get Current Time</p>
+		<p id="time"></p>
+		<script>
+			var cur_time = setInterval(function(){TimerFunc()},2000);
+			
+			function TimerFunc()
+			{
+				var date = new Date();
+				document.getElementById("time").innerHTML = date.toLocaleTimeString();
+			}
+		</script>
+	</body>
+</html>

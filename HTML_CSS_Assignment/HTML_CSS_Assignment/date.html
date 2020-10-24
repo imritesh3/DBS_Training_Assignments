@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h2>Date Operations</h2>
+		<input onclick="Date_ops()" type="button" value="Date Operations"/>
+		<p id="dates">
+		<script>
+			function Date_ops(){
+				var dt = new Date();
+				var date = dt.getDate();
+				var day =  dt.getDay();
+				var month = dt.getMonth()+1;
+				var year = dt.getFullYear();
+				
+				document.getElementById("dates").innerHTML = "Current date and time is:" +dt +"<br/>" +
+					"Date is:" +date +"<br/>" +
+					"Day of the date is:" +day +"<br/>" +
+					"Month of the date is:" +month +"<br/>"+
+					"Year of the date is:" +year +"<br/>";
+			}
+		</script>
+	</body>
+</html>
+				
+		
