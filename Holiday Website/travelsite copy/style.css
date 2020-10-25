@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  padding: 0rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  z-index: 100;
+}
+
+.logo > img {
+  height: 3rem;
+  padding: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  margin: inherit;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 1rem;
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.nav-links li:hover {
+  color: rgb(236, 173, 0);
+}
+
+.home {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.home > h1 {
+  font-size: 5rem;
+}
+
+.about {
+  min-height: 100vh;
+  background-color: rgb(216, 235, 238);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem;
+}
+
+.about > h1 {
+  padding: 1rem;
+}
+
+.about-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about-content img {
+  flex: 0.4;
+  height: 40vh;
+  object-fit: cover;
+  object-position: top;
+
+  box-shadow: 0px 1px 33px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 33px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 33px 0px rgba(0, 0, 0, 0.75);
+}
+
+.about-content p {
+  padding: 2rem;
+  flex: 0.6;
+  font-size: 22px;
+  text-align: justify;
+}
+
+.places {
+  display: flex;
+  min-height: 100vh;
+  background-color: rgb(223, 217, 217);
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem 0rem;
+}
+
+.food {
+  display: flex;
+  min-height: 100vh;
+  background-color: lightyellow;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem 0rem;
+}
+
+.hotels {
+  display: flex;
+  min-height: 100vh;
+  background-color: papayawhip;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem 0rem;
+}
+
+.card {
+  margin: 1rem;
+  width: 20rem;
+  height: 25rem;
+  position: relative;
+}
+
+.food .card {
+  margin: 1rem;
+  width: 20rem;
+  height: 30rem;
+  position: relative;
+}
+
+.hotels .card {
+  margin: 1rem;
+  width: 20rem;
+  height: 40rem;
+  position: relative;
+}
+.card-img-top {
+  height: 10rem;
+}
+
+.card .btn {
+  width: 80%;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  bottom: 1rem;
+  left: 10%;
+}
+
+/* Background */
+.carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: -1;
+  opacity: 0.5rem;
+}
+
+.carousel > img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.carousel::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.contact {
+  border-radius: 5px;
+  background-color: floralwhite;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.footer {
+  text-align: center;
+  padding: 1px;
+  background-color: black;
+  color: white;
+}
